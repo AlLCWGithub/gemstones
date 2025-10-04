@@ -1,6 +1,6 @@
 package net.alsonminecraft.gemstones;
 
-import net.fabricmc.api.ClientModInitializer
+import net.fabricmc.api.ClientModInitializer;
 
 public class GemstonesClient implements ClientModInitializer {
 	@Override
