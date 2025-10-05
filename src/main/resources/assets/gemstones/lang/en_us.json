@@ -1,3 +1,7 @@
 {
-	"item.gemstones.ruby": "Ruby"
+	"item.gemstones.ruby": "Ruby",
+	"item.gemstones.sapphire": "Sapphire",
+	"item.gemstones.ruby_block": "Block of Ruby",
+	"item.gemstones.sapphire_block": "Block of Sapphire",
+	"item.gemstones.furigem": "Furigem"
 }

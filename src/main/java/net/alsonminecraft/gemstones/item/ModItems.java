@@ -12,6 +12,8 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
 	public static final Item RUBY = registerItem("ruby", new Item(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Gemstones.MOD_ID, "ruby")))));
+	public static final Item SAPPHIRE = registerItem("sapphire", new Item(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Gemstones.MOD_ID, "sapphire")))));
+	public static final Item FURIGEM = registerItem("furigem", new Item(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM, Identifier.of(Gemstones.MOD_ID, "furigem")))));
 
 	private static Item registerItem(String name, Item item) {
 		return Registry.register(Registries.ITEM, Identifier.of(Gemstones.MOD_ID, name), item);
@@ -21,6 +23,8 @@ public class ModItems {
 		Gemstones.LOGGER.info("Registering Mod Items for " + Gemstones.MOD_ID);
 		ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
 			entries.add(RUBY);
+			entries.add(SAPPHIRE);
+			entries.add(FURIGEM);
 		});
 	}
 }
