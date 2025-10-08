@@ -17,6 +17,6 @@ public class Gemstones implements ModInitializer {
 	public void onInitialize() {
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
-		ModItemGroups.registerModItemGroups();
+		ModItemGroups.registerItemGroups();
 	}
 }
