@@ -17,7 +17,7 @@ public class ModItemGroups {
 		entries.add(ModItems.FURIGEM);
 	}).build());
 
-	public static final ItemGroup GEMSTONES_BLOCKS = Registry.register(Registries.ITEM_GROUP, Identifier.of(Gemstones.MOD_ID, "gemstones_blocks"), FabricItemGroup.builder().icon(() -> new ItemStack(ModItems.RUBY)).displayName(Text.translatable("itemgroup.gemstones.gemstones_blocks")).entries((displayContext, entries) -> {
+	public static final ItemGroup GEMSTONES_BLOCKS = Registry.register(Registries.ITEM_GROUP, Identifier.of(Gemstones.MOD_ID, "gemstones_blocks"), FabricItemGroup.builder().icon(() -> new ItemStack(ModBlocks.RUBY_BLOCK)).displayName(Text.translatable("itemgroup.gemstones.gemstones_blocks")).entries((displayContext, entries) -> {
 		entries.add(ModBlocks.RUBY_BLOCK);
 		entries.add(ModBlocks.SAPPHIRE_BLOCK);
 	}).build());
