@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "gemstones",
+	"version": "${version}",
+	"name": "Gemstones",
+	"description": "This is a mod that adds gemstones to the game!",
+	"authors": [
+		"AlsonMinecraft"
+	],
+	"contact": {
+		"homepage": "https://tudeer.top/",
+		"sources": "https://github.com/AlLCWGithub/gemstones"
+	},
+	"license": "MIT-License",
+	"icon": "assets/gemstones/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"top.tudeer.gemstones.Gemstones"
+		],
+		"fabric-datagen": [
+			"top.tudeer.gemstones.GemstonesDataGenerator"
+		]
+	},
+	"mixins": [
+		"gemstones.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.19.3",
+		"minecraft": "~26.1.2",
+		"java": ">=25",
+		"fabric-api": "*"
+	}
+}
