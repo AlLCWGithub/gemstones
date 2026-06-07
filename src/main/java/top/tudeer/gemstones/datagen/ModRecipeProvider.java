@@ -9,8 +9,6 @@ import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.world.item.crafting.CookingBookCategory;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Blocks;
-import org.jetbrains.annotations.NotNull;
-import org.jspecify.annotations.NullMarked;
 import top.tudeer.gemstones.blocks.ModBlocks;
 import top.tudeer.gemstones.item.ModItems;
 
@@ -23,7 +21,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     }
 
     @Override
-    @NotNull
     protected RecipeProvider createRecipeProvider(HolderLookup.Provider registries, RecipeOutput output) {
         return new RecipeProvider(registries, output) {
             @Override
@@ -42,7 +39,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
     }
 
     @Override
-    @NotNull
     public String getName() {
         return "Gemstone Recipes";
     }
