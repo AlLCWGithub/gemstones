@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    "gemstones:ruby",
+    "gemstones:sapphire",
+    "gemstones:amber"
+  ],
+  "result": {
+    "id": "minecraft:tnt"
+  }
+}
