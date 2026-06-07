@@ -4,6 +4,7 @@ import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import top.tudeer.gemstones.item.ModItems;
 
 public class Gemstones implements ModInitializer {
 	public static final String MOD_ID = "gemstones";
@@ -11,6 +12,6 @@ public class Gemstones implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-
+		ModItems.registerModItems();
 	}
 }

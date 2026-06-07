@@ -2,10 +2,13 @@ package top.tudeer.gemstones;
 
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
+import top.tudeer.gemstones.datagen.ModModelProvider;
 
 public class GemstonesDataGenerator implements DataGeneratorEntrypoint {
 	@Override
 	public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
+		var pack = fabricDataGenerator.createPack();
 
+		pack.addProvider(ModModelProvider::new);
 	}
 }
