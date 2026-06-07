@@ -15,15 +15,19 @@ import java.util.function.Function;
 public class ModItems {
     public static final Item RUBY = registerItem("ruby", Item::new);
     public static final Item SAPPHIRE = registerItem("sapphire", Item::new);
+    public static final Item AMBER = registerItem("amber", Item::new);
+    public static final Item ROUGH_RUBY = registerItem("rough_ruby", Item::new);
 
     private static Item registerItem(String name, Function<Item.Properties, Item> function) {
         return Registry.register(BuiltInRegistries.ITEM, Identifier.fromNamespaceAndPath(Gemstones.MOD_ID, name), function.apply(new Item.Properties().setId(ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Gemstones.MOD_ID, name)))));
     }
 
     public static void registerModItems() {
-        Gemstones.LOGGER.info("Registering Mod Items for " + Gemstones.MOD_ID);
+        Gemstones.LOGGER.info("Registering Mod Items For " + Gemstones.MOD_ID);
 
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.INGREDIENTS).register((output) -> output.accept(RUBY));
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.INGREDIENTS).register((output) -> output.accept(SAPPHIRE));
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.INGREDIENTS).register((output) -> output.accept(AMBER));
+        CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.INGREDIENTS).register((output) -> output.accept(ROUGH_RUBY));
     }
 }

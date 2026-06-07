@@ -1,4 +1,12 @@
 {
   "item.gemstones.ruby": "Ruby",
-  "item.gemstones.sapphire": "Sapphire"
+  "item.gemstones.sapphire": "Sapphire",
+  "item.gemstones.amber": "Amber",
+  "item.gemstones.rough_ruby": "Rough Ruby",
+  "creativemodetab.gemstones.gemstone_items": "Gemstones",
+  "creativemodetab.gemstones.gemstone_block_items": "Gemstone Blocks",
+  "block.gemstones.ruby_block": "Block of Ruby",
+  "block.gemstones.sapphire_block": "Block of Sapphire",
+  "block.gemstones.amber_block": "Block of Amber",
+  "block.gemstones.ruby_ore": "Ruby Ore"
 }
