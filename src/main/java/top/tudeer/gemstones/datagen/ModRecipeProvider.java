@@ -8,6 +8,7 @@ import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.CookingBookCategory;
+import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Blocks;
 import top.tudeer.gemstones.blocks.ModBlocks;
@@ -39,6 +40,10 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 shaped(RecipeCategory.MISC, ModBlocks.MAGNET_BLOCK).pattern("I I").pattern("IRI").pattern("IBI").define('I', Items.IRON_INGOT).define('R', Blocks.REDSTONE_BLOCK).define('B', Blocks.IRON_BLOCK).unlockedBy(getHasName(Items.IRON_INGOT), has(Items.IRON_INGOT)).group("gemstones").save(output);
                 oreSmelting(List.of(Blocks.COAL_BLOCK), RecipeCategory.MISC, CookingBookCategory.MISC, ModItems.CRUDE_OIL, 0.25f, 200, "crude_oil");
                 oreBlasting(List.of(Blocks.COAL_BLOCK), RecipeCategory.MISC, CookingBookCategory.MISC, ModItems.CRUDE_OIL, 0.25f, 100, "crude_oil");
+                stairBuilder(ModBlocks.RUBY_STAIRS, Ingredient.of(ModBlocks.RUBY_BLOCK)).unlockedBy(getHasName(ModBlocks.RUBY_BLOCK), has(ModBlocks.RUBY_BLOCK)).group("gemstones").save(output);
+                slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RUBY_SLAB, ModBlocks.RUBY_BLOCK);
+                stairBuilder(ModBlocks.SAPPHIRE_STAIRS, Ingredient.of(ModBlocks.SAPPHIRE_BLOCK)).unlockedBy(getHasName(ModBlocks.SAPPHIRE_BLOCK), has(ModBlocks.SAPPHIRE_BLOCK)).group("gemstones").save(output);
+                slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SAPPHIRE_SLAB, ModBlocks.SAPPHIRE_BLOCK);
             }
         };
     }

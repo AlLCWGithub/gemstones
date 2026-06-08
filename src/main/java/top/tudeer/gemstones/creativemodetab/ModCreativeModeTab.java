@@ -28,6 +28,10 @@ public class ModCreativeModeTab {
         output.accept(ModBlocks.RUBY_ORE);
         output.accept(ModBlocks.MAGIC_BLOCK);
         output.accept(ModBlocks.MAGNET_BLOCK);
+        output.accept(ModBlocks.RUBY_STAIRS);
+        output.accept(ModBlocks.RUBY_SLAB);
+        output.accept(ModBlocks.SAPPHIRE_STAIRS);
+        output.accept(ModBlocks.SAPPHIRE_SLAB);
     }).build());
 
     public static void registerModCreativeModeTabs() {

@@ -31,6 +31,10 @@ public class ModBlockLootTableProvider extends FabricBlockLootSubProvider {
         dropSelf(ModBlocks.AMBER_BLOCK);
         dropSelf(ModBlocks.MAGIC_BLOCK);
         dropSelf(ModBlocks.MAGNET_BLOCK);
+        dropSelf(ModBlocks.RUBY_STAIRS);
+        add(ModBlocks.RUBY_SLAB, this::createSlabItemTable);
+        dropSelf(ModBlocks.SAPPHIRE_STAIRS);
+        add(ModBlocks.SAPPHIRE_SLAB, this::createSlabItemTable);
 
         add(ModBlocks.RUBY_ORE, createMultipleOreDrops(ModBlocks.RUBY_ORE, ModItems.ROUGH_RUBY, 1, 2));
     }

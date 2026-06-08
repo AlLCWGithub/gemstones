@@ -15,12 +15,14 @@ public class ModModelProvider extends FabricModelProvider {
 
     @Override
     public void generateBlockStateModels(BlockModelGenerators blockModelGenerators) {
-        blockModelGenerators.createTrivialCube(ModBlocks.RUBY_BLOCK);
-        blockModelGenerators.createTrivialCube(ModBlocks.SAPPHIRE_BLOCK);
+        // blockModelGenerators.createTrivialCube(ModBlocks.RUBY_BLOCK);
+        // blockModelGenerators.createTrivialCube(ModBlocks.SAPPHIRE_BLOCK);
         blockModelGenerators.createTrivialCube(ModBlocks.AMBER_BLOCK);
         blockModelGenerators.createTrivialCube(ModBlocks.RUBY_ORE);
         blockModelGenerators.createTrivialCube(ModBlocks.MAGIC_BLOCK);
         blockModelGenerators.createTrivialCube(ModBlocks.MAGNET_BLOCK);
+        blockModelGenerators.family(ModBlocks.RUBY_BLOCK).stairs(ModBlocks.RUBY_STAIRS).slab(ModBlocks.RUBY_SLAB);
+        blockModelGenerators.family(ModBlocks.SAPPHIRE_BLOCK).stairs(ModBlocks.SAPPHIRE_STAIRS).slab(ModBlocks.SAPPHIRE_SLAB);
     }
 
     @Override

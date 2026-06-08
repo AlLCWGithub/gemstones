@@ -12,9 +12,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.TooltipFlag;
 import net.minecraft.world.item.component.TooltipDisplay;
-import net.minecraft.world.level.block.Block;
-import net.minecraft.world.level.block.DropExperienceBlock;
-import net.minecraft.world.level.block.SoundType;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import top.tudeer.gemstones.Gemstones;
 import top.tudeer.gemstones.blocks.custom.MagicBlock;
@@ -31,6 +29,10 @@ public class ModBlocks {
     public static final Block RUBY_ORE = registerBlock("ruby_ore", (properties) -> new DropExperienceBlock(UniformInt.of(2, 5), properties.strength(4f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
     public static final Block MAGIC_BLOCK = registerBlock("magic_block", (properties) -> new MagicBlock(properties.strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)), Component.translatable("tooltip.gemstones.magic_block"));
     public static final Block MAGNET_BLOCK = registerBlock("magnet_block", (properties) -> new MagnetBlock(properties.strength(4f, 1200f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
+    public static final Block RUBY_STAIRS = registerBlock("ruby_stairs", (properties) -> new StairBlock(ModBlocks.RUBY_BLOCK.defaultBlockState(), properties.strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+    public static final Block RUBY_SLAB = registerBlock("ruby_slab", (properties) -> new SlabBlock(properties.strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+    public static final Block SAPPHIRE_STAIRS = registerBlock("sapphire_stairs", (properties) -> new StairBlock(ModBlocks.SAPPHIRE_BLOCK.defaultBlockState(), properties.strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+    public static final Block SAPPHIRE_SLAB = registerBlock("sapphire_slab", (properties) -> new SlabBlock(properties.strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
 
     private static Block registerBlock(String name, Function<BlockBehaviour.Properties, Block> function) {
         Block toRegister = function.apply(BlockBehaviour.Properties.of().setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(Gemstones.MOD_ID, name))));
