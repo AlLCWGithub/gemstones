@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "gemstones",
+  "key": {
+    "B": "minecraft:iron_block",
+    "I": "minecraft:iron_ingot",
+    "R": "minecraft:redstone_block"
+  },
+  "pattern": [
+    "I I",
+    "IRI",
+    "IBI"
+  ],
+  "result": {
+    "id": "gemstones:magnet_block"
+  }
+}

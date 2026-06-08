@@ -3,6 +3,8 @@
     "gemstones:ruby_block",
     "gemstones:sapphire_block",
     "gemstones:amber_block",
-    "gemstones:ruby_ore"
+    "gemstones:ruby_ore",
+    "gemstones:magic_block",
+    "gemstones:magnet_block"
   ]
 }

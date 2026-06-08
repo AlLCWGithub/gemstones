@@ -6,6 +6,7 @@ import net.minecraft.core.HolderLookup;
 import net.minecraft.data.recipes.RecipeCategory;
 import net.minecraft.data.recipes.RecipeOutput;
 import net.minecraft.data.recipes.RecipeProvider;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.CookingBookCategory;
 import net.minecraft.world.level.ItemLike;
 import net.minecraft.world.level.block.Blocks;
@@ -34,6 +35,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 shapeless(RecipeCategory.BUILDING_BLOCKS, ModItems.SAPPHIRE, 9).requires(ModBlocks.SAPPHIRE_BLOCK).unlockedBy(getHasName(ModBlocks.SAPPHIRE_BLOCK), has(ModBlocks.SAPPHIRE_BLOCK)).save(output);
                 shapeless(RecipeCategory.BUILDING_BLOCKS, ModItems.AMBER, 4).requires(ModBlocks.AMBER_BLOCK).unlockedBy(getHasName(ModBlocks.AMBER_BLOCK), has(ModBlocks.AMBER_BLOCK)).save(output);
                 shapeless(RecipeCategory.MISC, Blocks.TNT).requires(ModItems.RUBY).requires(ModItems.SAPPHIRE).requires(ModItems.AMBER).unlockedBy(getHasName(Blocks.TNT), has(Blocks.TNT)).save(output);
+                shaped(RecipeCategory.MISC, ModBlocks.MAGIC_BLOCK).pattern("RRR").pattern("SSS").pattern("AAA").define('R', ModBlocks.RUBY_BLOCK).define('S', ModBlocks.SAPPHIRE_BLOCK).define('A', ModBlocks.AMBER_BLOCK).unlockedBy(getHasName(ModBlocks.RUBY_BLOCK), has(ModBlocks.RUBY_BLOCK)).group("gemstones").save(output);
+                shaped(RecipeCategory.MISC, ModBlocks.MAGNET_BLOCK).pattern("I I").pattern("IRI").pattern("IBI").define('I', Items.IRON_INGOT).define('R', Blocks.REDSTONE_BLOCK).define('B', Blocks.IRON_BLOCK).unlockedBy(getHasName(Items.IRON_INGOT), has(Items.IRON_INGOT)).group("gemstones").save(output);
             }
         };
     }

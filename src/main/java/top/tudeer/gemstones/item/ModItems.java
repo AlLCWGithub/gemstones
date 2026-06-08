@@ -9,6 +9,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraft.world.item.Item;
 import top.tudeer.gemstones.Gemstones;
+import top.tudeer.gemstones.item.custom.ChiselItem;
 
 import java.util.function.Function;
 
@@ -17,6 +18,8 @@ public class ModItems {
     public static final Item SAPPHIRE = registerItem("sapphire", Item::new);
     public static final Item AMBER = registerItem("amber", Item::new);
     public static final Item ROUGH_RUBY = registerItem("rough_ruby", Item::new);
+
+    public static final Item CHISEL = registerItem("chisel", (properties) -> new ChiselItem(properties.durability(32)));
 
     private static Item registerItem(String name, Function<Item.Properties, Item> function) {
         return Registry.register(BuiltInRegistries.ITEM, Identifier.fromNamespaceAndPath(Gemstones.MOD_ID, name), function.apply(new Item.Properties().setId(ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(Gemstones.MOD_ID, name)))));

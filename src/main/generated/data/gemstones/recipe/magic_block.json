@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "gemstones",
+  "key": {
+    "A": "gemstones:amber_block",
+    "R": "gemstones:ruby_block",
+    "S": "gemstones:sapphire_block"
+  },
+  "pattern": [
+    "RRR",
+    "SSS",
+    "AAA"
+  ],
+  "result": {
+    "id": "gemstones:magic_block"
+  }
+}

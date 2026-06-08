@@ -19,6 +19,8 @@ public class ModModelProvider extends FabricModelProvider {
         blockModelGenerators.createTrivialCube(ModBlocks.SAPPHIRE_BLOCK);
         blockModelGenerators.createTrivialCube(ModBlocks.AMBER_BLOCK);
         blockModelGenerators.createTrivialCube(ModBlocks.RUBY_ORE);
+        blockModelGenerators.createTrivialCube(ModBlocks.MAGIC_BLOCK);
+        blockModelGenerators.createTrivialCube(ModBlocks.MAGNET_BLOCK);
     }
 
     @Override
@@ -27,5 +29,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerators.generateFlatItem(ModItems.SAPPHIRE, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.AMBER, ModelTemplates.FLAT_ITEM);
         itemModelGenerators.generateFlatItem(ModItems.ROUGH_RUBY, ModelTemplates.FLAT_ITEM);
+        itemModelGenerators.generateFlatItem(ModItems.CHISEL, ModelTemplates.FLAT_HANDHELD_ITEM);
     }
 }

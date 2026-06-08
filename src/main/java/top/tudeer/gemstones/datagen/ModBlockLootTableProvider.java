@@ -5,7 +5,6 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootSubProvider;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.Items;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
@@ -30,6 +29,8 @@ public class ModBlockLootTableProvider extends FabricBlockLootSubProvider {
         dropSelf(ModBlocks.RUBY_BLOCK);
         dropSelf(ModBlocks.SAPPHIRE_BLOCK);
         dropSelf(ModBlocks.AMBER_BLOCK);
+        dropSelf(ModBlocks.MAGIC_BLOCK);
+        dropSelf(ModBlocks.MAGNET_BLOCK);
 
         add(ModBlocks.RUBY_ORE, createMultipleOreDrops(ModBlocks.RUBY_ORE, ModItems.ROUGH_RUBY, 1, 2));
     }

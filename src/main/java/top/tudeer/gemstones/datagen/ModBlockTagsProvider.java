@@ -19,9 +19,12 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
         valueLookupBuilder(BlockTags.MINEABLE_WITH_PICKAXE).add(ModBlocks.SAPPHIRE_BLOCK);
         valueLookupBuilder(BlockTags.MINEABLE_WITH_PICKAXE).add(ModBlocks.AMBER_BLOCK);
         valueLookupBuilder(BlockTags.MINEABLE_WITH_PICKAXE).add(ModBlocks.RUBY_ORE);
+        valueLookupBuilder(BlockTags.MINEABLE_WITH_PICKAXE).add(ModBlocks.MAGIC_BLOCK);
+        valueLookupBuilder(BlockTags.MINEABLE_WITH_PICKAXE).add(ModBlocks.MAGNET_BLOCK);
         valueLookupBuilder(BlockTags.NEEDS_IRON_TOOL).add(ModBlocks.RUBY_BLOCK);
         valueLookupBuilder(BlockTags.NEEDS_IRON_TOOL).add(ModBlocks.SAPPHIRE_BLOCK);
         valueLookupBuilder(BlockTags.NEEDS_IRON_TOOL).add(ModBlocks.AMBER_BLOCK);
         valueLookupBuilder(BlockTags.NEEDS_IRON_TOOL).add(ModBlocks.RUBY_ORE);
+        valueLookupBuilder(BlockTags.NEEDS_DIAMOND_TOOL).add(ModBlocks.MAGNET_BLOCK);
     }
 }

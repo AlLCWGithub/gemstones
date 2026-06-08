@@ -1,7 +1,5 @@
 package top.tudeer.gemstones.blocks;
 
-import net.minecraft.client.OptionInstance;
-import net.minecraft.commands.arguments.ResourceKeyArgument;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.core.registries.Registries;
@@ -15,6 +13,8 @@ import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import top.tudeer.gemstones.Gemstones;
+import top.tudeer.gemstones.blocks.custom.MagicBlock;
+import top.tudeer.gemstones.blocks.custom.MagnetBlock;
 
 import java.util.function.Function;
 
@@ -23,6 +23,8 @@ public class ModBlocks {
     public static final Block SAPPHIRE_BLOCK = registerBlock("sapphire_block", (properties) -> new Block(properties.strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
     public static final Block AMBER_BLOCK = registerBlock("amber_block", (properties) -> new Block(properties.strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
     public static final Block RUBY_ORE = registerBlock("ruby_ore", (properties) -> new DropExperienceBlock(UniformInt.of(2, 5), properties.strength(4f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+    public static final Block MAGIC_BLOCK = registerBlock("magic_block", (properties) -> new MagicBlock(properties.strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+    public static final Block MAGNET_BLOCK = registerBlock("magnet_block", (properties) -> new MagnetBlock(properties.strength(4f, 1200f).requiresCorrectToolForDrops().sound(SoundType.METAL)));
 
     private static Block registerBlock(String name, Function<BlockBehaviour.Properties, Block> function) {
         Block toRegister = function.apply(BlockBehaviour.Properties.of().setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(Gemstones.MOD_ID, name))));
