@@ -3,9 +3,9 @@
   "category": "misc",
   "cookingtime": 200,
   "experience": 0.25,
-  "group": "ruby",
-  "ingredient": "gemstones:rough_ruby",
+  "group": "crude_oil",
+  "ingredient": "minecraft:coal_block",
   "result": {
-    "id": "gemstones:ruby"
+    "id": "gemstones:crude_oil"
   }
 }

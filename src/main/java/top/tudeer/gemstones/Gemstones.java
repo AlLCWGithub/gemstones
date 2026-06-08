@@ -7,6 +7,8 @@ import org.slf4j.LoggerFactory;
 import top.tudeer.gemstones.blocks.ModBlocks;
 import top.tudeer.gemstones.creativemodetab.ModCreativeModeTab;
 import top.tudeer.gemstones.item.ModItems;
+import top.tudeer.gemstones.registries.ModFuels;
+
 
 public class Gemstones implements ModInitializer {
 	public static final String MOD_ID = "gemstones";
@@ -17,5 +19,6 @@ public class Gemstones implements ModInitializer {
 		ModCreativeModeTab.registerModCreativeModeTabs();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModFuels.registerFuels();
 	}
 }

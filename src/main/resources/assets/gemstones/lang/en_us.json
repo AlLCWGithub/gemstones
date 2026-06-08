@@ -4,6 +4,8 @@
   "item.gemstones.amber": "Amber",
   "item.gemstones.rough_ruby": "Rough Ruby",
   "item.gemstones.chisel": "Chisel",
+  "item.gemstones.orange": "Orange",
+  "item.gemstones.crude_oil": "Crude Oil",
   "creativemodetab.gemstones.gemstone_items": "Gemstones",
   "creativemodetab.gemstones.gemstone_block_items": "Gemstone Blocks",
   "block.gemstones.ruby_block": "Block of Ruby",
@@ -11,5 +13,9 @@
   "block.gemstones.amber_block": "Block of Amber",
   "block.gemstones.ruby_ore": "Ruby Ore",
   "block.gemstones.magic_block": "Magic Block",
-  "block.gemstones.magnet_block": "Magnet Block"
+  "block.gemstones.magnet_block": "Magnet Block",
+  "tooltip.gemstones.chisel": "Press §eShift§r For More Information!",
+  "tooltip.gemstones.chisel.shift_down": "Chisels Blocks Into Other Blocks!",
+  "tooltip.gemstones.orange": "Mangoes Are Still Better!",
+  "tooltip.gemstones.magic_block": "§1Magical§r Block That Gives Free §bDiamonds§r?"
 }

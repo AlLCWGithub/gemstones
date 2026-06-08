@@ -2,10 +2,7 @@ package top.tudeer.gemstones;
 
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
-import top.tudeer.gemstones.datagen.ModBlockLootTableProvider;
-import top.tudeer.gemstones.datagen.ModBlockTagsProvider;
-import top.tudeer.gemstones.datagen.ModModelProvider;
-import top.tudeer.gemstones.datagen.ModRecipeProvider;
+import top.tudeer.gemstones.datagen.*;
 
 public class GemstonesDataGenerator implements DataGeneratorEntrypoint {
 	@Override
@@ -16,5 +13,6 @@ public class GemstonesDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModBlockTagsProvider::new);
 		pack.addProvider(ModBlockLootTableProvider::new);
 		pack.addProvider(ModRecipeProvider::new);
+		pack.addProvider(ModItemTagsProvider::new);
 	}
 }

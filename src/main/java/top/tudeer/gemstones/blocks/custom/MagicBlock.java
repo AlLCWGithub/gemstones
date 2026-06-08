@@ -16,7 +16,7 @@ import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.BlockHitResult;
-import top.tudeer.gemstones.item.ModItems;
+import top.tudeer.gemstones.tags.ModTags;
 
 public class MagicBlock extends Block {
     public MagicBlock(Properties properties) {
@@ -47,6 +47,6 @@ public class MagicBlock extends Block {
     }
 
     private boolean isValidItem(ItemStack item) {
-        return item.is(ModItems.RUBY) || item.is(ModItems.SAPPHIRE) || item.is(ModItems.AMBER) || item.is(Items.IRON_INGOT);
+        return item.is(ModTags.Items.TRANSFORMABLE_ITEMS);
     }
 }

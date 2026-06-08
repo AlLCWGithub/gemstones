@@ -27,8 +27,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
             @Override
             public void buildRecipes() {
                 List<ItemLike> GEMSTONE_SMELTABLES = List.of(ModItems.ROUGH_RUBY, ModBlocks.RUBY_ORE);
-                oreSmelting(GEMSTONE_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.BLOCKS, ModItems.RUBY, 0.25f, 200, "ruby");
-                oreBlasting(GEMSTONE_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.BLOCKS, ModItems.RUBY, 0.25f, 100, "ruby");
+                oreSmelting(GEMSTONE_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.MISC, ModItems.RUBY, 0.25f, 200, "ruby");
+                oreBlasting(GEMSTONE_SMELTABLES, RecipeCategory.MISC, CookingBookCategory.MISC, ModItems.RUBY, 0.25f, 100, "ruby");
                 nineBlockStorageRecipes(RecipeCategory.MISC, ModItems.RUBY, RecipeCategory.BUILDING_BLOCKS, ModBlocks.RUBY_BLOCK);
                 shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SAPPHIRE_BLOCK).pattern("RRR").pattern("RRR").pattern("RRR").define('R', ModItems.SAPPHIRE).unlockedBy(getHasName(ModItems.SAPPHIRE), has(ModItems.SAPPHIRE)).group("gemstones").save(output);
                 shaped(RecipeCategory.BUILDING_BLOCKS, ModBlocks.AMBER_BLOCK).pattern("AA").pattern("AA").define('A', ModItems.AMBER).unlockedBy(getHasName(ModItems.AMBER), has(ModItems.AMBER)).group("gemstones").save(output);
@@ -37,6 +37,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 shapeless(RecipeCategory.MISC, Blocks.TNT).requires(ModItems.RUBY).requires(ModItems.SAPPHIRE).requires(ModItems.AMBER).unlockedBy(getHasName(Blocks.TNT), has(Blocks.TNT)).save(output);
                 shaped(RecipeCategory.MISC, ModBlocks.MAGIC_BLOCK).pattern("RRR").pattern("SSS").pattern("AAA").define('R', ModBlocks.RUBY_BLOCK).define('S', ModBlocks.SAPPHIRE_BLOCK).define('A', ModBlocks.AMBER_BLOCK).unlockedBy(getHasName(ModBlocks.RUBY_BLOCK), has(ModBlocks.RUBY_BLOCK)).group("gemstones").save(output);
                 shaped(RecipeCategory.MISC, ModBlocks.MAGNET_BLOCK).pattern("I I").pattern("IRI").pattern("IBI").define('I', Items.IRON_INGOT).define('R', Blocks.REDSTONE_BLOCK).define('B', Blocks.IRON_BLOCK).unlockedBy(getHasName(Items.IRON_INGOT), has(Items.IRON_INGOT)).group("gemstones").save(output);
+                oreSmelting(List.of(Blocks.COAL_BLOCK), RecipeCategory.MISC, CookingBookCategory.MISC, ModItems.CRUDE_OIL, 0.25f, 200, "crude_oil");
+                oreBlasting(List.of(Blocks.COAL_BLOCK), RecipeCategory.MISC, CookingBookCategory.MISC, ModItems.CRUDE_OIL, 0.25f, 100, "crude_oil");
             }
         };
     }
