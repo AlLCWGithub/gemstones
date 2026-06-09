@@ -13,6 +13,7 @@ import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraft.world.level.block.state.properties.WoodType;
 import net.minecraft.world.level.material.MapColor;
 import net.minecraft.world.level.material.PushReaction;
 import top.tudeer.gemstones.Gemstones;
@@ -42,6 +43,15 @@ public class ModBlocks {
     public static final Block SAPPHIRE_PRESSURE_PLATE = registerBlock("sapphire_pressure_plate", (properties) -> new PressurePlateBlock(BlockSetType.IRON, properties.mapColor(MapColor.COLOR_BLUE).forceSolidOn().instrument(NoteBlockInstrument.BASS).strength(4f).noCollision().pushReaction(PushReaction.DESTROY)));
     public static final Block AMBER_BUTTON = registerBlock("amber_button", (properties) -> new ButtonBlock(BlockSetType.IRON, 20, properties.strength(4f).noCollision()));
     public static final Block AMBER_PRESSURE_PLATE = registerBlock("amber_pressure_plate", (properties) -> new PressurePlateBlock(BlockSetType.IRON, properties.mapColor(MapColor.COLOR_YELLOW).forceSolidOn().instrument(NoteBlockInstrument.BASS).strength(4f).noCollision().pushReaction(PushReaction.DESTROY)));
+    public static final Block RUBY_FENCE = registerBlock("ruby_fence", (properties) -> new FenceBlock(properties.strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+    public static final Block RUBY_FENCE_GATE = registerBlock("ruby_fence_gate", (properties) -> new FenceGateBlock(WoodType.ACACIA, properties.strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+    public static final Block RUBY_WALL = registerBlock("ruby_wall", (properties) -> new WallBlock(properties.strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+    public static final Block SAPPHIRE_FENCE = registerBlock("sapphire_fence", (properties) -> new FenceBlock(properties.strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+    public static final Block SAPPHIRE_FENCE_GATE = registerBlock("sapphire_fence_gate", (properties) -> new FenceGateBlock(WoodType.ACACIA, properties.strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+    public static final Block SAPPHIRE_WALL = registerBlock("sapphire_wall", (properties) -> new WallBlock(properties.strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+    public static final Block AMBER_FENCE = registerBlock("amber_fence", (properties) -> new FenceBlock(properties.strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+    public static final Block AMBER_FENCE_GATE = registerBlock("amber_fence_gate", (properties) -> new FenceGateBlock(WoodType.ACACIA, properties.strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+    public static final Block AMBER_WALL = registerBlock("amber_wall", (properties) -> new WallBlock(properties.strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
 
     private static Block registerBlock(String name, Function<BlockBehaviour.Properties, Block> function) {
         Block toRegister = function.apply(BlockBehaviour.Properties.of().setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(Gemstones.MOD_ID, name))));

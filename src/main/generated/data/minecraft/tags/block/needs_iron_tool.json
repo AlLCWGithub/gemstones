@@ -10,6 +10,15 @@
     "gemstones:sapphire_stairs",
     "gemstones:sapphire_slab",
     "gemstones:amber_stairs",
-    "gemstones:amber_slab"
+    "gemstones:amber_slab",
+    "gemstones:ruby_fence",
+    "gemstones:ruby_fence_gate",
+    "gemstones:ruby_wall",
+    "gemstones:sapphire_fence",
+    "gemstones:sapphire_fence_gate",
+    "gemstones:sapphire_wall",
+    "gemstones:amber_fence",
+    "gemstones:amber_fence_gate",
+    "gemstones:amber_wall"
   ]
 }

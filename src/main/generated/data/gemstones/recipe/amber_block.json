@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
-  "group": "gemstones",
+  "group": "gemstone_blocks",
   "key": {
     "A": "gemstones:amber"
   },

@@ -1,14 +1,13 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "building",
-  "group": "gemstones",
   "key": {
-    "R": "gemstones:sapphire"
+    "#": "gemstones:sapphire"
   },
   "pattern": [
-    "RRR",
-    "RRR",
-    "RRR"
+    "###",
+    "###",
+    "###"
   ],
   "result": {
     "id": "gemstones:sapphire_block"

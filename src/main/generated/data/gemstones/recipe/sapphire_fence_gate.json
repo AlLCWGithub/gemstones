@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "gemstone_fence_gates",
+  "key": {
+    "#": "minecraft:stick",
+    "W": "gemstones:sapphire"
+  },
+  "pattern": [
+    "#W#",
+    "#W#"
+  ],
+  "result": {
+    "id": "gemstones:sapphire_fence_gate"
+  }
+}

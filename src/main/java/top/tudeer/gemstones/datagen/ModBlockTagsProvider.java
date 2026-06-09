@@ -27,7 +27,17 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.SAPPHIRE_STAIRS)
                 .add(ModBlocks.SAPPHIRE_SLAB)
                 .add(ModBlocks.AMBER_STAIRS)
-                .add(ModBlocks.AMBER_SLAB);
+                .add(ModBlocks.AMBER_SLAB)
+                .add(ModBlocks.RUBY_FENCE)
+                .add(ModBlocks.RUBY_FENCE_GATE)
+                .add(ModBlocks.RUBY_WALL)
+                .add(ModBlocks.SAPPHIRE_FENCE)
+                .add(ModBlocks.SAPPHIRE_FENCE_GATE)
+                .add(ModBlocks.SAPPHIRE_WALL)
+                .add(ModBlocks.AMBER_FENCE)
+                .add(ModBlocks.AMBER_FENCE_GATE)
+                .add(ModBlocks.AMBER_WALL);
+
 
         valueLookupBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.RUBY_BLOCK)
@@ -40,7 +50,16 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.SAPPHIRE_STAIRS)
                 .add(ModBlocks.SAPPHIRE_SLAB)
                 .add(ModBlocks.AMBER_STAIRS)
-                .add(ModBlocks.AMBER_SLAB);
+                .add(ModBlocks.AMBER_SLAB)
+                .add(ModBlocks.RUBY_FENCE)
+                .add(ModBlocks.RUBY_FENCE_GATE)
+                .add(ModBlocks.RUBY_WALL)
+                .add(ModBlocks.SAPPHIRE_FENCE)
+                .add(ModBlocks.SAPPHIRE_FENCE_GATE)
+                .add(ModBlocks.SAPPHIRE_WALL)
+                .add(ModBlocks.AMBER_FENCE)
+                .add(ModBlocks.AMBER_FENCE_GATE)
+                .add(ModBlocks.AMBER_WALL);
 
         valueLookupBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.MAGNET_BLOCK);
@@ -64,5 +83,20 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.RUBY_PRESSURE_PLATE)
                 .add(ModBlocks.SAPPHIRE_PRESSURE_PLATE)
                 .add(ModBlocks.AMBER_PRESSURE_PLATE);
+
+        valueLookupBuilder(BlockTags.FENCES)
+                .add(ModBlocks.RUBY_FENCE)
+                .add(ModBlocks.SAPPHIRE_FENCE)
+                .add(ModBlocks.AMBER_FENCE);
+
+        valueLookupBuilder(BlockTags.FENCE_GATES)
+                .add(ModBlocks.RUBY_FENCE_GATE)
+                .add(ModBlocks.SAPPHIRE_FENCE_GATE)
+                .add(ModBlocks.AMBER_FENCE_GATE);
+
+        valueLookupBuilder(BlockTags.WALLS)
+                .add(ModBlocks.RUBY_WALL)
+                .add(ModBlocks.SAPPHIRE_WALL)
+                .add(ModBlocks.AMBER_WALL);
     }
 }

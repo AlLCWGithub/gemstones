@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "group": "gemstones",
+  "group": "magic_block",
   "key": {
     "A": "gemstones:amber_block",
     "R": "gemstones:ruby_block",

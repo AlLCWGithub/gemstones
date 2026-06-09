@@ -41,6 +41,15 @@ public class ModCreativeModeTab {
         output.accept(ModBlocks.SAPPHIRE_PRESSURE_PLATE);
         output.accept(ModBlocks.AMBER_BUTTON);
         output.accept(ModBlocks.AMBER_PRESSURE_PLATE);
+        output.accept(ModBlocks.RUBY_FENCE);
+        output.accept(ModBlocks.RUBY_FENCE_GATE);
+        output.accept(ModBlocks.RUBY_WALL);
+        output.accept(ModBlocks.SAPPHIRE_FENCE);
+        output.accept(ModBlocks.SAPPHIRE_FENCE_GATE);
+        output.accept(ModBlocks.SAPPHIRE_WALL);
+        output.accept(ModBlocks.AMBER_FENCE);
+        output.accept(ModBlocks.AMBER_FENCE_GATE);
+        output.accept(ModBlocks.AMBER_WALL);
     }).build());
 
     public static void registerModCreativeModeTabs() {

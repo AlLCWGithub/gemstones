@@ -21,9 +21,9 @@ public class ModModelProvider extends FabricModelProvider {
         blockModelGenerators.createTrivialCube(ModBlocks.RUBY_ORE);
         blockModelGenerators.createTrivialCube(ModBlocks.MAGIC_BLOCK);
         blockModelGenerators.createTrivialCube(ModBlocks.MAGNET_BLOCK);
-        blockModelGenerators.family(ModBlocks.RUBY_BLOCK).stairs(ModBlocks.RUBY_STAIRS).slab(ModBlocks.RUBY_SLAB).button(ModBlocks.RUBY_BUTTON).pressurePlate(ModBlocks.RUBY_PRESSURE_PLATE);
-        blockModelGenerators.family(ModBlocks.SAPPHIRE_BLOCK).stairs(ModBlocks.SAPPHIRE_STAIRS).slab(ModBlocks.SAPPHIRE_SLAB).button(ModBlocks.SAPPHIRE_BUTTON).pressurePlate(ModBlocks.SAPPHIRE_PRESSURE_PLATE);
-        blockModelGenerators.family(ModBlocks.AMBER_BLOCK).stairs(ModBlocks.AMBER_STAIRS).slab(ModBlocks.AMBER_SLAB).button(ModBlocks.AMBER_BUTTON).pressurePlate(ModBlocks.AMBER_PRESSURE_PLATE);
+        blockModelGenerators.family(ModBlocks.RUBY_BLOCK).stairs(ModBlocks.RUBY_STAIRS).slab(ModBlocks.RUBY_SLAB).button(ModBlocks.RUBY_BUTTON).pressurePlate(ModBlocks.RUBY_PRESSURE_PLATE).fence(ModBlocks.RUBY_FENCE).fenceGate(ModBlocks.RUBY_FENCE_GATE).wall(ModBlocks.RUBY_WALL);
+        blockModelGenerators.family(ModBlocks.SAPPHIRE_BLOCK).stairs(ModBlocks.SAPPHIRE_STAIRS).slab(ModBlocks.SAPPHIRE_SLAB).button(ModBlocks.SAPPHIRE_BUTTON).pressurePlate(ModBlocks.SAPPHIRE_PRESSURE_PLATE).fence(ModBlocks.SAPPHIRE_FENCE).fenceGate(ModBlocks.SAPPHIRE_FENCE_GATE).wall(ModBlocks.SAPPHIRE_WALL);
+        blockModelGenerators.family(ModBlocks.AMBER_BLOCK).stairs(ModBlocks.AMBER_STAIRS).slab(ModBlocks.AMBER_SLAB).button(ModBlocks.AMBER_BUTTON).pressurePlate(ModBlocks.AMBER_PRESSURE_PLATE).fence(ModBlocks.AMBER_FENCE).fenceGate(ModBlocks.AMBER_FENCE_GATE).wall(ModBlocks.AMBER_WALL);
     }
 
     @Override

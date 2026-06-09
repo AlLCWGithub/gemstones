@@ -44,6 +44,15 @@ public class ModBlockLootTableProvider extends FabricBlockLootSubProvider {
         dropSelf(ModBlocks.SAPPHIRE_PRESSURE_PLATE);
         dropSelf(ModBlocks.AMBER_BUTTON);
         dropSelf(ModBlocks.AMBER_PRESSURE_PLATE);
+        dropSelf(ModBlocks.RUBY_FENCE);
+        dropSelf(ModBlocks.RUBY_FENCE_GATE);
+        dropSelf(ModBlocks.RUBY_WALL);
+        dropSelf(ModBlocks.SAPPHIRE_FENCE);
+        dropSelf(ModBlocks.SAPPHIRE_FENCE_GATE);
+        dropSelf(ModBlocks.SAPPHIRE_WALL);
+        dropSelf(ModBlocks.AMBER_FENCE);
+        dropSelf(ModBlocks.AMBER_FENCE_GATE);
+        dropSelf(ModBlocks.AMBER_WALL);
     }
 
     public LootTable.Builder createMultipleOreDrops(final Block block, Item item, float minDrops, float maxDrops) {

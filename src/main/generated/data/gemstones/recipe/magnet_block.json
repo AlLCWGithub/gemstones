@@ -1,7 +1,7 @@
 {
   "type": "minecraft:crafting_shaped",
   "category": "misc",
-  "group": "gemstones",
+  "group": "magnet_block",
   "key": {
     "B": "minecraft:iron_block",
     "I": "minecraft:iron_ingot",
