@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "redstone",
+  "group": "gemstones",
+  "ingredients": [
+    "gemstones:amber"
+  ],
+  "result": {
+    "id": "gemstones:amber_button"
+  }
+}

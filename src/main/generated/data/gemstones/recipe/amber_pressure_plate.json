@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "#": "gemstones:amber"
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "id": "gemstones:amber_pressure_plate"
+  }
+}

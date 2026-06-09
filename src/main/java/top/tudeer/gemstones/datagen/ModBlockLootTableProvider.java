@@ -35,8 +35,15 @@ public class ModBlockLootTableProvider extends FabricBlockLootSubProvider {
         add(ModBlocks.RUBY_SLAB, this::createSlabItemTable);
         dropSelf(ModBlocks.SAPPHIRE_STAIRS);
         add(ModBlocks.SAPPHIRE_SLAB, this::createSlabItemTable);
-
+        dropSelf(ModBlocks.AMBER_STAIRS);
+        add(ModBlocks.AMBER_SLAB, this::createSlabItemTable);
         add(ModBlocks.RUBY_ORE, createMultipleOreDrops(ModBlocks.RUBY_ORE, ModItems.ROUGH_RUBY, 1, 2));
+        dropSelf(ModBlocks.RUBY_BUTTON);
+        dropSelf(ModBlocks.RUBY_PRESSURE_PLATE);
+        dropSelf(ModBlocks.SAPPHIRE_BUTTON);
+        dropSelf(ModBlocks.SAPPHIRE_PRESSURE_PLATE);
+        dropSelf(ModBlocks.AMBER_BUTTON);
+        dropSelf(ModBlocks.AMBER_PRESSURE_PLATE);
     }
 
     public LootTable.Builder createMultipleOreDrops(final Block block, Item item, float minDrops, float maxDrops) {

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "#": "gemstones:ruby"
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "id": "gemstones:ruby_pressure_plate"
+  }
+}

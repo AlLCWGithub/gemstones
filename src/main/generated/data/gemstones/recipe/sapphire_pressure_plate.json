@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "#": "gemstones:sapphire"
+  },
+  "pattern": [
+    "##"
+  ],
+  "result": {
+    "id": "gemstones:sapphire_pressure_plate"
+  }
+}

@@ -7,13 +7,14 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.resources.Identifier;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.util.valueproviders.UniformInt;
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemStack;
-import net.minecraft.world.item.TooltipFlag;
+import net.minecraft.world.item.*;
 import net.minecraft.world.item.component.TooltipDisplay;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
+import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
+import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.material.PushReaction;
 import top.tudeer.gemstones.Gemstones;
 import top.tudeer.gemstones.blocks.custom.MagicBlock;
 import top.tudeer.gemstones.blocks.custom.MagnetBlock;
@@ -33,6 +34,14 @@ public class ModBlocks {
     public static final Block RUBY_SLAB = registerBlock("ruby_slab", (properties) -> new SlabBlock(properties.strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
     public static final Block SAPPHIRE_STAIRS = registerBlock("sapphire_stairs", (properties) -> new StairBlock(ModBlocks.SAPPHIRE_BLOCK.defaultBlockState(), properties.strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
     public static final Block SAPPHIRE_SLAB = registerBlock("sapphire_slab", (properties) -> new SlabBlock(properties.strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+    public static final Block AMBER_STAIRS = registerBlock("amber_stairs", (properties) -> new StairBlock(ModBlocks.AMBER_BLOCK.defaultBlockState(), properties.strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+    public static final Block AMBER_SLAB = registerBlock("amber_slab", (properties) -> new SlabBlock(properties.strength(4f).requiresCorrectToolForDrops().sound(SoundType.AMETHYST)));
+    public static final Block RUBY_BUTTON = registerBlock("ruby_button", (properties) -> new ButtonBlock(BlockSetType.IRON, 20, properties.strength(4f).noCollision()));
+    public static final Block RUBY_PRESSURE_PLATE = registerBlock("ruby_pressure_plate", (properties) -> new PressurePlateBlock(BlockSetType.IRON, properties.mapColor(MapColor.COLOR_RED).forceSolidOn().instrument(NoteBlockInstrument.BASS).strength(4f).noCollision().pushReaction(PushReaction.DESTROY)));
+    public static final Block SAPPHIRE_BUTTON = registerBlock("sapphire_button", (properties) -> new ButtonBlock(BlockSetType.IRON, 20, properties.strength(4f).noCollision()));
+    public static final Block SAPPHIRE_PRESSURE_PLATE = registerBlock("sapphire_pressure_plate", (properties) -> new PressurePlateBlock(BlockSetType.IRON, properties.mapColor(MapColor.COLOR_BLUE).forceSolidOn().instrument(NoteBlockInstrument.BASS).strength(4f).noCollision().pushReaction(PushReaction.DESTROY)));
+    public static final Block AMBER_BUTTON = registerBlock("amber_button", (properties) -> new ButtonBlock(BlockSetType.IRON, 20, properties.strength(4f).noCollision()));
+    public static final Block AMBER_PRESSURE_PLATE = registerBlock("amber_pressure_plate", (properties) -> new PressurePlateBlock(BlockSetType.IRON, properties.mapColor(MapColor.COLOR_YELLOW).forceSolidOn().instrument(NoteBlockInstrument.BASS).strength(4f).noCollision().pushReaction(PushReaction.DESTROY)));
 
     private static Block registerBlock(String name, Function<BlockBehaviour.Properties, Block> function) {
         Block toRegister = function.apply(BlockBehaviour.Properties.of().setId(ResourceKey.create(Registries.BLOCK, Identifier.fromNamespaceAndPath(Gemstones.MOD_ID, name))));

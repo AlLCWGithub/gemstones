@@ -21,6 +21,7 @@ public class ModCreativeModeTab {
         output.accept(ModItems.ORANGE);
         output.accept(ModItems.CRUDE_OIL);
     }).build());
+
     public static final CreativeModeTab GEMSTONE_BLOCKS_TAB = Registry.register(BuiltInRegistries.CREATIVE_MODE_TAB, Identifier.fromNamespaceAndPath(Gemstones.MOD_ID, "gemstone_block_items"), FabricCreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.RUBY_BLOCK)).title(Component.translatable("creativemodetab.gemstones.gemstone_block_items")).displayItems((parameters, output) -> {
         output.accept(ModBlocks.RUBY_BLOCK);
         output.accept(ModBlocks.SAPPHIRE_BLOCK);
@@ -32,6 +33,14 @@ public class ModCreativeModeTab {
         output.accept(ModBlocks.RUBY_SLAB);
         output.accept(ModBlocks.SAPPHIRE_STAIRS);
         output.accept(ModBlocks.SAPPHIRE_SLAB);
+        output.accept(ModBlocks.AMBER_STAIRS);
+        output.accept(ModBlocks.AMBER_SLAB);
+        output.accept(ModBlocks.RUBY_BUTTON);
+        output.accept(ModBlocks.RUBY_PRESSURE_PLATE);
+        output.accept(ModBlocks.SAPPHIRE_BUTTON);
+        output.accept(ModBlocks.SAPPHIRE_PRESSURE_PLATE);
+        output.accept(ModBlocks.AMBER_BUTTON);
+        output.accept(ModBlocks.AMBER_PRESSURE_PLATE);
     }).build());
 
     public static void registerModCreativeModeTabs() {

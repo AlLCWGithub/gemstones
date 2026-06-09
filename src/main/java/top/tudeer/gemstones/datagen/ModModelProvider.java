@@ -17,12 +17,13 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateBlockStateModels(BlockModelGenerators blockModelGenerators) {
         // blockModelGenerators.createTrivialCube(ModBlocks.RUBY_BLOCK);
         // blockModelGenerators.createTrivialCube(ModBlocks.SAPPHIRE_BLOCK);
-        blockModelGenerators.createTrivialCube(ModBlocks.AMBER_BLOCK);
+        // blockModelGenerators.createTrivialCube(ModBlocks.AMBER_BLOCK);
         blockModelGenerators.createTrivialCube(ModBlocks.RUBY_ORE);
         blockModelGenerators.createTrivialCube(ModBlocks.MAGIC_BLOCK);
         blockModelGenerators.createTrivialCube(ModBlocks.MAGNET_BLOCK);
-        blockModelGenerators.family(ModBlocks.RUBY_BLOCK).stairs(ModBlocks.RUBY_STAIRS).slab(ModBlocks.RUBY_SLAB);
-        blockModelGenerators.family(ModBlocks.SAPPHIRE_BLOCK).stairs(ModBlocks.SAPPHIRE_STAIRS).slab(ModBlocks.SAPPHIRE_SLAB);
+        blockModelGenerators.family(ModBlocks.RUBY_BLOCK).stairs(ModBlocks.RUBY_STAIRS).slab(ModBlocks.RUBY_SLAB).button(ModBlocks.RUBY_BUTTON).pressurePlate(ModBlocks.RUBY_PRESSURE_PLATE);
+        blockModelGenerators.family(ModBlocks.SAPPHIRE_BLOCK).stairs(ModBlocks.SAPPHIRE_STAIRS).slab(ModBlocks.SAPPHIRE_SLAB).button(ModBlocks.SAPPHIRE_BUTTON).pressurePlate(ModBlocks.SAPPHIRE_PRESSURE_PLATE);
+        blockModelGenerators.family(ModBlocks.AMBER_BLOCK).stairs(ModBlocks.AMBER_STAIRS).slab(ModBlocks.AMBER_SLAB).button(ModBlocks.AMBER_BUTTON).pressurePlate(ModBlocks.AMBER_PRESSURE_PLATE);
     }
 
     @Override

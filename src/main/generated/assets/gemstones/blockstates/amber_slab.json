@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "gemstones:block/amber_slab"
+    },
+    "type=double": {
+      "model": "gemstones:block/amber_block"
+    },
+    "type=top": {
+      "model": "gemstones:block/amber_slab_top"
+    }
+  }
+}

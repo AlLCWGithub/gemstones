@@ -44,6 +44,14 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.RUBY_SLAB, ModBlocks.RUBY_BLOCK);
                 stairBuilder(ModBlocks.SAPPHIRE_STAIRS, Ingredient.of(ModBlocks.SAPPHIRE_BLOCK)).unlockedBy(getHasName(ModBlocks.SAPPHIRE_BLOCK), has(ModBlocks.SAPPHIRE_BLOCK)).group("gemstones").save(output);
                 slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.SAPPHIRE_SLAB, ModBlocks.SAPPHIRE_BLOCK);
+                stairBuilder(ModBlocks.AMBER_STAIRS, Ingredient.of(ModBlocks.AMBER_BLOCK)).unlockedBy(getHasName(ModBlocks.AMBER_BLOCK), has(ModBlocks.AMBER_BLOCK)).group("gemstones").save(output);
+                slab(RecipeCategory.BUILDING_BLOCKS, ModBlocks.AMBER_SLAB, ModBlocks.AMBER_BLOCK);
+                buttonBuilder(ModBlocks.RUBY_BUTTON, Ingredient.of(ModItems.RUBY)).unlockedBy(getHasName(ModItems.RUBY), has(ModItems.RUBY)).group("gemstones").save(output);
+                pressurePlate(ModBlocks.RUBY_PRESSURE_PLATE, ModItems.RUBY);
+                buttonBuilder(ModBlocks.SAPPHIRE_BUTTON, Ingredient.of(ModItems.SAPPHIRE)).unlockedBy(getHasName(ModItems.SAPPHIRE), has(ModItems.SAPPHIRE)).group("gemstones").save(output);
+                pressurePlate(ModBlocks.SAPPHIRE_PRESSURE_PLATE, ModItems.SAPPHIRE);
+                buttonBuilder(ModBlocks.AMBER_BUTTON, Ingredient.of(ModItems.AMBER)).unlockedBy(getHasName(ModItems.AMBER), has(ModItems.AMBER)).group("gemstones").save(output);
+                pressurePlate(ModBlocks.AMBER_PRESSURE_PLATE, ModItems.AMBER);
             }
         };
     }

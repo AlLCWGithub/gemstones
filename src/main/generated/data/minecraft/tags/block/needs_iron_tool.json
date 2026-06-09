@@ -4,9 +4,12 @@
     "gemstones:sapphire_block",
     "gemstones:amber_block",
     "gemstones:ruby_ore",
+    "gemstones:magic_block",
     "gemstones:ruby_stairs",
     "gemstones:ruby_slab",
     "gemstones:sapphire_stairs",
-    "gemstones:sapphire_slab"
+    "gemstones:sapphire_slab",
+    "gemstones:amber_stairs",
+    "gemstones:amber_slab"
   ]
 }
