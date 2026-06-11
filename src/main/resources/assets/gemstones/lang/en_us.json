@@ -39,7 +39,7 @@
   "block.gemstones.ruby_trapdoor": "Ruby Trapdoor",
   "block.gemstones.sapphire_door": "Sapphire Door",
   "block.gemstones.sapphire_trapdoor": "Sapphire Trapdoor",
-  "block.gemstones.amber_doors": "Amber Door",
+  "block.gemstones.amber_door": "Amber Door",
   "block.gemstones.amber_trapdoor": "Amber Trapdoor",
   "tooltip.gemstones.chisel": "Press §eShift§r For More Information!",
   "tooltip.gemstones.chisel.shift_down": "Chisels Blocks Into Other Blocks!",
