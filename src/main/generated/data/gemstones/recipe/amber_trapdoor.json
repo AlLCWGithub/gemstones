@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "group": "gemstone_trapdoors",
+  "key": {
+    "#": "gemstones:amber"
+  },
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "result": {
+    "count": 2,
+    "id": "gemstones:amber_trapdoor"
+  }
+}

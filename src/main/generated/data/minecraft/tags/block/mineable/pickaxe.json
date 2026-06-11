@@ -20,6 +20,12 @@
     "gemstones:sapphire_wall",
     "gemstones:amber_fence",
     "gemstones:amber_fence_gate",
-    "gemstones:amber_wall"
+    "gemstones:amber_wall",
+    "gemstones:ruby_door",
+    "gemstones:ruby_trapdoor",
+    "gemstones:sapphire_door",
+    "gemstones:sapphire_trapdoor",
+    "gemstones:amber_door",
+    "gemstones:amber_trapdoor"
   ]
 }

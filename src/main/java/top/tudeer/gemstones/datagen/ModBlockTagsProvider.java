@@ -36,7 +36,13 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.SAPPHIRE_WALL)
                 .add(ModBlocks.AMBER_FENCE)
                 .add(ModBlocks.AMBER_FENCE_GATE)
-                .add(ModBlocks.AMBER_WALL);
+                .add(ModBlocks.AMBER_WALL)
+                .add(ModBlocks.RUBY_DOOR)
+                .add(ModBlocks.RUBY_TRAPDOOR)
+                .add(ModBlocks.SAPPHIRE_DOOR)
+                .add(ModBlocks.SAPPHIRE_TRAPDOOR)
+                .add(ModBlocks.AMBER_DOOR)
+                .add(ModBlocks.AMBER_TRAPDOOR);
 
 
         valueLookupBuilder(BlockTags.NEEDS_IRON_TOOL)
@@ -59,7 +65,13 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.SAPPHIRE_WALL)
                 .add(ModBlocks.AMBER_FENCE)
                 .add(ModBlocks.AMBER_FENCE_GATE)
-                .add(ModBlocks.AMBER_WALL);
+                .add(ModBlocks.AMBER_WALL)
+                .add(ModBlocks.RUBY_DOOR)
+                .add(ModBlocks.RUBY_TRAPDOOR)
+                .add(ModBlocks.SAPPHIRE_DOOR)
+                .add(ModBlocks.SAPPHIRE_TRAPDOOR)
+                .add(ModBlocks.AMBER_DOOR)
+                .add(ModBlocks.AMBER_TRAPDOOR);
 
         valueLookupBuilder(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.MAGNET_BLOCK);
@@ -98,5 +110,15 @@ public class ModBlockTagsProvider extends FabricTagsProvider.BlockTagsProvider {
                 .add(ModBlocks.RUBY_WALL)
                 .add(ModBlocks.SAPPHIRE_WALL)
                 .add(ModBlocks.AMBER_WALL);
+
+        valueLookupBuilder(BlockTags.DOORS)
+                .add(ModBlocks.RUBY_DOOR)
+                .add(ModBlocks.SAPPHIRE_DOOR)
+                .add(ModBlocks.AMBER_DOOR);
+
+        valueLookupBuilder(BlockTags.TRAPDOORS)
+                .add(ModBlocks.RUBY_TRAPDOOR)
+                .add(ModBlocks.SAPPHIRE_TRAPDOOR)
+                .add(ModBlocks.AMBER_TRAPDOOR);
     }
 }

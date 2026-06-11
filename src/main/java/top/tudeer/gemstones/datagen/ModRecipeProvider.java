@@ -60,6 +60,12 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 fenceBuilder(ModBlocks.AMBER_FENCE, Ingredient.of(ModItems.AMBER)).unlockedBy(getHasName(ModItems.AMBER), has(ModItems.AMBER)).group("gemstone_fences").save(output);
                 fenceGateBuilder(ModBlocks.AMBER_FENCE_GATE, Ingredient.of(ModItems.AMBER)).unlockedBy(getHasName(ModItems.AMBER), has(ModItems.AMBER)).group("gemstone_fence_gates").save(output);
                 wall(RecipeCategory.BUILDING_BLOCKS, ModBlocks.AMBER_WALL, ModBlocks.AMBER_BLOCK);
+                doorBuilder(ModBlocks.RUBY_DOOR, Ingredient.of(ModItems.RUBY)).unlockedBy(getHasName(ModItems.RUBY), has(ModItems.RUBY)).group("gemstone_doors").save(output);
+                trapdoorBuilder(ModBlocks.RUBY_TRAPDOOR, Ingredient.of(ModItems.RUBY)).unlockedBy(getHasName(ModItems.RUBY), has(ModItems.RUBY)).group("gemstone_trapdoors").save(output);
+                doorBuilder(ModBlocks.SAPPHIRE_DOOR, Ingredient.of(ModItems.SAPPHIRE)).unlockedBy(getHasName(ModItems.SAPPHIRE), has(ModItems.SAPPHIRE)).group("gemstone_doors").save(output);
+                trapdoorBuilder(ModBlocks.SAPPHIRE_TRAPDOOR, Ingredient.of(ModItems.SAPPHIRE)).unlockedBy(getHasName(ModItems.SAPPHIRE), has(ModItems.SAPPHIRE)).group("gemstone_trapdoors").save(output);
+                doorBuilder(ModBlocks.AMBER_DOOR, Ingredient.of(ModItems.AMBER)).unlockedBy(getHasName(ModItems.AMBER), has(ModItems.AMBER)).group("gemstone_doors").save(output);
+                trapdoorBuilder(ModBlocks.AMBER_TRAPDOOR, Ingredient.of(ModItems.AMBER)).unlockedBy(getHasName(ModItems.AMBER), has(ModItems.AMBER)).group("gemstone_trapdoors").save(output);
             }
         };
     }

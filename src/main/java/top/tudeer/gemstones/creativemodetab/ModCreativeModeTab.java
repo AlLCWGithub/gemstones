@@ -50,6 +50,12 @@ public class ModCreativeModeTab {
         output.accept(ModBlocks.AMBER_FENCE);
         output.accept(ModBlocks.AMBER_FENCE_GATE);
         output.accept(ModBlocks.AMBER_WALL);
+        output.accept(ModBlocks.RUBY_DOOR);
+        output.accept(ModBlocks.RUBY_TRAPDOOR);
+        output.accept(ModBlocks.SAPPHIRE_DOOR);
+        output.accept(ModBlocks.SAPPHIRE_TRAPDOOR);
+        output.accept(ModBlocks.AMBER_DOOR);
+        output.accept(ModBlocks.AMBER_TRAPDOOR);
     }).build());
 
     public static void registerModCreativeModeTabs() {
